@@ -1,11 +1,11 @@
 
 variable "deployment_role" {
-    type = "string"
+    type = string
     default = ""
 }
 
 variable "external_id" {
-  type = "string"
+  type = string
   default = ""
 }
 
@@ -15,6 +15,6 @@ variable "deploy_resources" {
 }
 
 variable "region" {
-    type = "string"
+    type = string
     default = "us-east-1"
 }
