@@ -14,5 +14,5 @@ data "aws_caller_identity" "current" {
 
 resource "aws_s3_bucket" "example_bucket" {
     count = var.deploy_resources == true ? 1 : 0
-    bucket = "BucketExample-${data.aws_caller_identity.current[count.index].account_id}"
+    bucket = "bucketexample-${data.aws_caller_identity.current[count.index].account_id}"
 }
